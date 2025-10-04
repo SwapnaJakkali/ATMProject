@@ -14,7 +14,7 @@ public class Main {
             System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
             int choice = sc.nextInt();
-            sc.nextLine(); // consume newline
+            sc.nextLine(); 
 
             if (choice == 5) {
                 System.out.println("Thank you for using the ATM!");

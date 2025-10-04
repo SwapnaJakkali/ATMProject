@@ -6,7 +6,6 @@ public class ATMFunctions {
     public ATMFunctions() {
         accounts = new ArrayList<>();
 
-        // 10 predefined accounts
         accounts.add(new Account("Ravi", 1234, 5000));
         accounts.add(new Account("Priya", 2345, 7000));
         accounts.add(new Account("Suresh", 3456, 10000));
@@ -29,6 +28,7 @@ public class ATMFunctions {
         return null;
     }
 
+    // checkbalance by name and pin
     public void checkBalance(String name, int pin) {
         Account acc = findAccount(name, pin);
         if (acc != null) {
@@ -38,6 +38,7 @@ public class ATMFunctions {
         }
     }
 
+    // deposit money
     public void deposit(String name, int pin, double amount) {
         Account acc = findAccount(name, pin);
         if (acc != null) {
@@ -48,6 +49,7 @@ public class ATMFunctions {
         }
     }
 
+    // withdraw
     public void withdraw(String name, int pin, double amount) {
         Account acc = findAccount(name, pin);
         if (acc != null) {
@@ -61,6 +63,7 @@ public class ATMFunctions {
         }
     }
 
+    //transaction history
     public void transactionHistory(String name, int pin) {
         Account acc = findAccount(name, pin);
         if (acc != null) {
