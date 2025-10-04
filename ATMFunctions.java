@@ -49,7 +49,7 @@ public class ATMFunctions {
         }
     }
 
-    // withdraw
+    // withdraw by name , pin and amount
     public void withdraw(String name, int pin, double amount) {
         Account acc = findAccount(name, pin);
         if (acc != null) {
