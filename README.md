@@ -1,4 +1,4 @@
-Problem Statement
+Problem Statement:-
 Build a simple ATM Machine application in Java that allows users to perform basic banking operations such as checking balance, depositing money, withdrawing money, and viewing transaction history. The system should use predefined user accounts (with name, PIN, and balance) and allow users to securely perform transactions after verifying their credentials.
 
 Features & Functionalities
@@ -51,6 +51,7 @@ Class: Main
 • Calls appropriate methods from ATMFunctions.
 
 Menu Example
+
 ===== ATM Machine =====
 1. Check Balance
 2. Deposit Money
