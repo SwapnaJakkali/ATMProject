@@ -2,11 +2,17 @@ Problem Statement:-
 Build a simple ATM Machine application in Java that allows users to perform basic banking operations such as checking balance, depositing money, withdrawing money, and viewing transaction history. The system should use predefined user accounts (with name, PIN, and balance) and allow users to securely perform transactions after verifying their credentials.
 
 Features & Functionalities
+
 Check Balance – Display the current balance of the logged-in user.
+
 Deposit Money – Add a specified amount to the user's account balance.
+
 Withdraw Money – Deduct a specified amount from the user's balance if sufficient funds are available.
+
 Transaction History – Display all past transactions (deposits and withdrawals) for the logged-in user.
+
 Exit Program – Safely close the application.
+
 
 Data Structure
 Accounts List (Predefined)
@@ -29,26 +35,6 @@ accounts = [
 Each account also stores a list of transaction strings:
 transactions = ["Deposited ₹5000", "Withdrew ₹2000"]
 
-Classes and Methods to Implement
-Class: Account
-• getName() – Returns the account holder's name.
-• getPin() – Returns the PIN.
-• getBalance() – Returns the current balance.
-• deposit(amount) – Adds the amount to the balance and stores a transaction record.
-• withdraw(amount) – Deducts the amount from the balance if sufficient funds exist and stores a transaction record.
-• getTransactions() – Returns all stored transactions.
-
-Class: ATMFunctions
-• checkBalance(name, pin) – Displays the user's balance after verifying credentials.
-• deposit(name, pin, amount) – Deposits the specified amount and updates balance.
-• withdraw(name, pin, amount) – Withdraws the specified amount if balance is sufficient.
-• transactionHistory(name, pin) – Displays all previous transactions.
-• findAccount(name, pin) – Searches for a matching account.
-
-Class: Main
-• Displays a menu-driven interface.
-• Accepts user input (name, PIN, amount).
-• Calls appropriate methods from ATMFunctions.
 
 Menu Example
 
